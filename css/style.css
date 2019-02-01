@@ -48,24 +48,24 @@ a {
   margin-bottom: 126px;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-line {
+  display: flex;
+}
+
 .logo {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: #95e1d3;
-  display: inline-block;
-}
-
-.menu {
-  display: inline-block;
-  float: right;
-  font-size: 0;
-  list-style: none;
 }
 
 .menu-item {
-  display: inline-block;
-  margin: 6px 58px 0 0;
+  margin: 8px 58px 0 0;
 }
 
 .menu-item:last-child {
@@ -240,21 +240,19 @@ a {
 .team-info {
   width: 380px;
   text-align: center;
-  position: relative;
 }
 
 .photo {
   width: 380px;
   height: 472px;
   margin-bottom: 30px;
-  background-color: #95e1d3;
 }
 
 .photo:hover {
+  display: block;
   content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
+  transform: translate(-10px, -10px);
+  background-image: linear-gradient(to left, rgb(252,227,138), rgba(243,129,129));
 }
 
 .name {
@@ -312,11 +310,25 @@ a {
   display: inline-block;
   background-color: #95e1d3;
   border: none;
-  padding: 14px 34px;
+  width: 150px;
+  min-height: 40px;
+  padding: 14px;
   font-size: 14px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+}
+
+.Rectangle_14 {
+  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  position: absolute;
+  left: 350px;
+  top: 970px;
+  width: 380px;
+  height: 472px;
+  z-index: 19;
 }
