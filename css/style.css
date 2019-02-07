@@ -10,7 +10,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 0;
 }
 
 *,
@@ -58,6 +57,7 @@ a {
 }
 
 .logo {
+  display: block;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -127,7 +127,7 @@ a {
 
 .card {
   display: flex;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
   font-size: 0;
   list-style: none;
   flex-wrap: wrap;
@@ -233,26 +233,101 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  font-size: 0;
   margin-bottom: 82px;
 }
 
 .team-info {
   width: 380px;
   text-align: center;
+  position: relative;
 }
 
-.photo {
+.image-wrapper {
   width: 380px;
   height: 472px;
   margin-bottom: 30px;
 }
 
-.photo:hover {
+ /* .networks {
+  position: absolute;
+  width: 380px;
+  height: 472px;
+  background-image: linear-gradient(to top, rgb(252,227,138), rgba(243,129,129));
+  top: 0;
+  left: 0;
+  opacity: 0,5;
+  transform: translate(-10px, -10px);
+} */
+
+/* .networks:hover {
+  opacity: 0.7;
+} */
+
+.image-wrapper:hover {
   display: block;
   content: "";
   transform: translate(-10px, -10px);
-  background-image: linear-gradient(to left, rgb(252,227,138), rgba(243,129,129));
+  position: relative;
+}
+
+.networks {
+  position: absolute;
+  width: 380px;
+  height: 472px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.networks:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 207px 78px;
+  background-image: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9));
+  opacity: 1;
+}
+
+.networks-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 56px;
+  background-color: #fce38a;
+}
+
+.networks-icons:hover {
+  background-color: #95e1d3;
+}
+
+.network-facebook {
+  display: block;
+  background-image: url(../photo/networks/facebook.png);
+  width: 13px;
+  height: 26px;
+}
+
+.network-twitter {
+  display: block;
+  background-image: url(../photo/networks/twitter.png);
+  width: 26px;
+  height: 22px;
+}
+
+.network-pinterest {
+  display: block;
+  background-image: url(../photo/networks/pinterest.png);
+  width: 21px;
+  height: 26px;
+}
+
+.network-instagram {
+  display: block;
+  background-image: url(../photo/networks/instagram.png);
+  width: 26px;
+  height: 26px;
 }
 
 .name {
@@ -292,6 +367,7 @@ a {
 .email-wrapper {
   float: right;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .email-signature {
@@ -319,16 +395,4 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-}
-
-.Rectangle_14 {
-  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  position: absolute;
-  left: 350px;
-  top: 970px;
-  width: 380px;
-  height: 472px;
-  z-index: 19;
 }
