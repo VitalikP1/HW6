@@ -351,8 +351,8 @@ a {
 }
 
 .email-wrapper {
-  float: right;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .email-signature {
@@ -380,6 +380,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .designer-link {
@@ -394,4 +395,6 @@ a {
 .footer-style {
   border-top: 1px solid #e5e5e5;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
