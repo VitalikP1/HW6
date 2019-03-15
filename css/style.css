@@ -255,6 +255,7 @@ a {
   width: 380px;
   height: 472px;
   margin-bottom: 30px;
+  transition: transform 0.2s linear;
 }
 
 .image-wrapper:hover {
@@ -283,6 +284,7 @@ a {
   padding: 207px 78px;
   background-image: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9));
   opacity: 1;
+  transition: opacity 0.2s linear;
 }
 
 .networks-icons {
